@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>404 - Page Not Found - Loadboard</title>
+    <style type="text/css" media="screen, print">
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-y: hidden;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #app {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container-text {
+            width: 300px;
+        }
+
+        .logo {
+            width: 229px;
+            margin-left: -17px;
+            margin-top: -17px;
+        }
+
+        .headline {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: -0.5px;
+            font-feature-settings: 'liga' off;
+            color: #000000;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .message {
+            font-size: 14px;
+            line-height: 19px;
+            color: #000000;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .link {
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #93272C;
+            text-decoration: none;
+        }
+
+        .error-image {
+            width: 300px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 12px;
+            text-align: center;
+        }
+
+        .footer-image {
+            width: 162px;
+        }
+    </style>
+    <link rel="shortcut icon" href="./images/ts2022icons/favicon.ico" type="image/x-icon" />
+</head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <div class="container-text">
+                    <img class="logo" src="/images/Logos/ts2022Logos/ts_logo-hex.png" />
+                    <div class="headline">Hmmm... You might have made a wrong turn.</div>
+                    <div class="message">We can get you back on the road.</div>
+                    <div class="link"><a href="https://truckstop.com/">Home</a></div>
+                    <div class="link"><a href="https://truckstop.com/login/">Load Search</a></div>
+                    <div class="link"><a href="https://truckstop.com/login/">Truck Search</a></div>
+                    <div class="link"><a href="https://truckstop.com/login/">Truck Post</a></div>
+                    <div class="link"><a href="https://truckstop.com/login/">Load Post</a></div>
+                    <div class="link"><a href="https://community.truckstop.com/s/">Help Forum</a></div>
+                    <div class="link"><a href="https://truckstop.com/support/">Customer Support</a></div>
+                </div>
+                <img class="error-image" src="./404lb/404_loadboard.png" />
+            </div>
+            <div class="footer">
+                <img class="footer-image" src="./404lb/copyright2020truckstop.png" />
+            </div>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'),local(OpenSans),url(../fonts/v13-cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'),local(OpenSans-Semibold),url(../fonts/v13-MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format("truetype");
+}
+
+html, body {
+    background: #f3f3f3;
+    font-family: 'Open Sans',sans-serif;
+    overflow-x: hidden;
+}
+
+.loginBox {
+    width: 50% !important;
+    color: #394857;
+    font-weight: 400;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .loginBox .loginTitle {
+        text-align: center;
+    }
+
+        .loginBox .loginTitle h1 {
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+            .loginBox .loginTitle h1::before {
+                margin: 0 auto;
+                content: '';
+                background: url('../fonts/Styles-logo-truckstop.svg');
+                width: 56px;
+                height: 73px;
+                display: block;
+            }
+
+    .loginBox .border {
+        background: #fff;
+        border: solid 1px #dedede;
+        border-radius: 5px;
+    }
+
+    .loginBox .InnerBox {
+        margin: 0;
+        padding: 15px 30px;
+        background-color: transparent;
+        background: 0 0;
+    }
+
+        .loginBox .InnerBox * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .loginBox .InnerBox .credentials, .loginBox .InnerBox h2 {
+            margin: 0px;
+            padding: 7px 0 3px 0;
+            font-family: 'Open Sans',sans-serif;
+            color: #727476 !important;
+            font-weight: 600;
+        }
+
+            .loginBox .InnerBox .credentials .req, .loginBox .InnerBox h2 .req {
+                color: #B6121B;
+                font-size: 1.25em;
+            }
+
+        .loginBox .InnerBox .credentials {
+            margin-left: 5px;
+        }
+
+        .loginBox .InnerBox input[type=text], .loginBox .InnerBox input[type=email], .loginBox .InnerBox input[type=password], .loginBox .InnerBox input[type=tel], .loginBox .InnerBox textarea.form-control {
+            border: solid 1px #e4e4e6;
+            border-radius: 2px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            font-size: 14px;
+            height: 28px;
+            padding: 3px 8px;
+        }
+
+        .loginBox .InnerBox .checkbox label {
+            font-size: .75em;
+        }
+
+        .loginBox .InnerBox .credSaveMsg {
+            padding: 7px;
+            color: #525456 !important;
+            line-height: 15px;
+            display: none;
+        }
+
+            .loginBox .InnerBox .credSaveMsg a {
+                color: #b11721;
+            }
+
+        .loginBox .InnerBox .loginBtn {
+            height: 40px;
+            border-radius: 3px;
+            cursor: pointer;
+            background: none repeat scroll 0 0 #B6121B;
+            border: 0 none;
+            color: #FFF;
+            font-size: 16px;
+            padding: 0;
+            margin: 30px 0 15px 0;
+            cursor: pointer;
+            font-family: 'Open Sans',sans-serif;
+            -webkit-transition: background-color .25s;
+            -webkit-appearance: none;
+            -o-transition: background-color .25s;
+            transition: background-color .25s;
+        }
+
+            .loginBox .InnerBox .loginBtn:hover {
+                background: #de1d29;
+            }
+
+    .loginBox #loginLinks {
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+
+        .loginBox #loginLinks em {
+            font-style: normal;
+        }
+
+        .loginBox #loginLinks a {
+            padding: 3px 5px;
+            display: inline-block;
+            font-size: 11px;
+            text-decoration: none;
+            -webkit-transition: color .25s;
+            -o-transition: color .25s;
+            transition: color .25s;
+            color: #b11721;
+            font-family: "Open Sans",sans-serif;
+            line-height: 1em;
+            text-transform: none;
+            font-size: .75em;
+        }
+
+            .loginBox #loginLinks a:hover em {
+                color: #de1d29;
+            }
+
+.container {
+    display: table;
+    width: 100%;
+}
+
+form {
+    height: 100%;
+}
+
+.loginBox-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.marketing-promotions {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    border: none;
+}
+
+.marketin-promotions {
+    background-position: center center;
+}
+
+/* ----------- Mobile ----------- */
+@media screen and (max-height: 550px) {
+
+    /*.loginTitle {
+      display: none;
+   }*/
+}
+
+/* ----------- Mobile ----------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        display: block;
+    }
+
+    .loginBox-container {
+        position: auto;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+
+    .marketing-promotions {
+        display: none;
+    }
+}
+
+/* ----------- Tablet ----------- */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .container {
+        display: block;
+    }
+
+    .loginBox-container {
+        position: auto;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+
+    .marketing-promotions {
+        display: none;
+    }
+}
+
+/* ----------- Laptop ----------- */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .container {
+        display: block;
+    }
+
+    .loginBox-container {
+        width: 60%;
+    }
+
+    .marketing-promotions {
+        width: 40%;
+    }
+}
+
+p {
+    margin: 2px 0;
+}
+
+.loginBox h2 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.credentials {
+    margin: 0 0 5px 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.border {
+    border: 1px solid #B6121B;
+}
+
+.InnerBox {
+    background-color: #383838;
+    background: none repeat scroll 0 0 rgba(0,0,0,.5);
+    margin: 3px;
+    padding: 15px;
+    text-align: left;
+}
+
+    .InnerBox input {
+        border: 0 none;
+        height: 25px;
+        margin: 0 0 10px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+input.checkbox {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -3px;
+    *overflow: hidden;
+    border: 0;
+    outline: none;
+    display: inline;
+}
+
+.loginContinueBox, #loginLoading {
+    top: 20px;
+    position: relative;
+    transform: translateY(-50%);
+    display: none;
+}
+
+#loginLoading {
+    background: rgba(0,0,0,0) url(../images/images-loading-image.gif) no-repeat scroll center center;
+    height: 50px;
+}
+
+.loginContinueBox {
+    height: 75px;
+}
+
+.credSaveMsg {
+    margin-top: 4px;
+    font-size: 10px;
+}
+
+.credSaveLearnMore {
+    font-weight: 700;
+    color: #07E;
+}
